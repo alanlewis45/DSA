@@ -3,20 +3,16 @@
 
 int main(){
 
-    int *arr;
+    int *arr = malloc(5 * sizeof(int));
 
-    arr = malloc(2 * sizeof(int));
+    for(int i = 0; i < 5; i++){
+        arr[i] = i + 1;
+    }
 
-    arr[0] = 10;
-    arr[1] = 20;
+    arr = realloc(arr, 3 * sizeof(int));
 
-    arr = realloc(arr , 4 * sizeof(int));
-
-    arr[2] = 30;
-    arr[3] = 40;
-
-    for(int i = 0; i < 4; i++){
-        printf("%d ", &arr[i]);
+    for(int i = 0; i < 3; i++){
+        printf("%d ", arr[i]);
     }
 
     free(arr);
