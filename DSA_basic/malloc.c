@@ -3,15 +3,15 @@
 
 int main() {
 
-    int *p;
+    int *ptr;
 
-    p = (int *) malloc(3 * sizeof(int));
+    ptr = (int *) malloc(3 * sizeof(int));
 
     for (int i = 0; i < 3; i++) {
-        printf("%d\n", p[i]);
+        printf("%d\n", ptr[i]);
     }
 
-    free(p);
+    free(ptr);
 
     return 0;
 }
