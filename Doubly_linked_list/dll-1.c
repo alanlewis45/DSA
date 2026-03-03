@@ -46,7 +46,6 @@ int main() {
     }
 
     printf("\nBackward Traversal:\n");
-
     temp = head;
     while (temp->next != NULL) {
         temp = temp->next;
