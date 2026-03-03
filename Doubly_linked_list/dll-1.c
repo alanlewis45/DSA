@@ -46,12 +46,12 @@ int main() {
     }
 
     printf("\nBackward Traversal:\n");
-    while ((temp == NULL) && (head != NULL)) {
-        temp = head;
-        while (temp->next != NULL) {
-            temp = temp->next;
-        }
+
+    temp = head;
+    while (temp->next != NULL) {
+        temp = temp->next;
     }
+
 
     while (temp != NULL) {
         printf("%d ",temp->data);
