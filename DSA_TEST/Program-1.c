@@ -43,7 +43,6 @@ int main() {
         }
     }
 
-
     travel = head;
     while (travel != NULL)
     {
