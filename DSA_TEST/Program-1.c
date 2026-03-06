@@ -12,7 +12,7 @@ struct Node
 };
 
 int main() {
-    int n, value, pos, search, d;
+    int n, value, pos, search;
     struct Node *head, *NewNode, *prevnode, *travel, *prev;
 
     // creation of linked list

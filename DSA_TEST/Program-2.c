@@ -11,8 +11,8 @@ struct Node{
 };
 
 int main() {
-    int value, n, pos, search;
-    struct Node *head = NULL, *prevnode, *travel, *NewNode, *prev, *last;
+    int value, n;
+    struct Node *head = NULL, *prevnode, *travel, *NewNode;
 
     printf("Enter the number of nodes: ");
     scanf("%d", &n);
