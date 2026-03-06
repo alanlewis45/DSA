@@ -50,7 +50,7 @@ int main() {
         travel = travel->next;
     }
 
-    //insertion opation
+    //insertion operation
 
     printf("\nEnter the data: ");
     scanf("%d", &value);
